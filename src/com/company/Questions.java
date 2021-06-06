@@ -3,14 +3,13 @@ import java.util.*;
 
 public class Questions {
     List<String> questions = new ArrayList<String>();
-    String answer;
 
     public void mathQuestions() {
         questions.add("Solve for q.\n" +
                 "\n" +
                 "–8q = 3 − 11q\n" +
                 "\n" +
-                "q = ");
+                "q = " );
         questions.add("Solve for d.\n" +
                 "–\n" +
                 "19d≥20d+3(\n" +
@@ -37,5 +36,25 @@ public class Questions {
         questions.add("–3w + 1 = –4w + 14\n" +
                 "\n" +
                 "w = \n");
+        return;
+    }
+
+    public Questions(List<String> questions) {
+        this.questions = questions;
+    }
+
+    public List<String> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List<String> questions) {
+        this.questions = questions;
+    }
+
+    @Override
+    public String toString() {
+        return "Questions{" +
+                "questions=" + questions.get(0) + questions.get(1) + questions.get(2) + questions.get(3) + questions.get(4) +
+                '}';
     }
 }
