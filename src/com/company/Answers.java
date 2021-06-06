@@ -3,24 +3,24 @@ package com.company;
 import java.util.*;
 
 public class Answers {
-    List<String> answers = new ArrayList<>();
+    ArrayList<String> answers = new ArrayList<>();
 
-    public Answers(List<String> answers) {
+    public Answers(ArrayList<String> answers) {
         this.answers = answers;
     }
 
     public Answers() {
     }
 
-    public List<String> getAnswers() {
+    public ArrayList<String> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(List<String> answers) {
+    public void setAnswers(ArrayList<String> answers) {
         this.answers = answers;
     }
 
-    public List<String> mathAnswers(){
+    public ArrayList<String> mathAnswers(){
         answers.add("1");
         answers.add("-12");
         answers.add("-16");
@@ -29,7 +29,7 @@ public class Answers {
         return answers;
     }
 
-    public List<String> sciAnswers(){
+    public ArrayList<String> sciAnswers(){
         answers.add("Deoxyribonucleic acid");
         answers.add("206");
         answers.add("Newton");
