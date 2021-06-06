@@ -23,7 +23,7 @@ The main aim of this project is to create a platform consisting of quiz question
  - install IntelliJ IDEA CE 
  - clone the repo by opening the terminal and run the following command
  
- `git clone https://github.com/nourhanx/QuizManagmentSystem.git`
+ `git clone https://github.com/NourhanElyamany/QuizManagmentSystem.git`
  
  - don't forget to use the following commands when you finish and start to code to get the update version
  
