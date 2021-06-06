@@ -1,12 +1,12 @@
 package com.company;
 
 public class gradingSystem {
-    final int fullPoints = 5;
+    final int fullPoints = 3;
     float percentage;
     String letter;
 
     public float calculate(int points){
-        percentage = points/fullPoints * 100;
+        percentage = 100 * ( (float)points / fullPoints );
         return percentage;
     }
     public String grade(float percentage){
