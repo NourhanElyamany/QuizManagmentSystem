@@ -4,14 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        Teacher teach = new Teacher();
         mathCollege obj =  new mathCollege() {
             @Override
             public void mathQuestions() {
 
             };
         };
-
         System.out.println(obj.toString());
+        System.out.println(teach.generate(obj.getQuestions()));
         };
     };
 
