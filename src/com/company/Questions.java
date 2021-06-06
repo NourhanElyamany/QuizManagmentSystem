@@ -1,11 +1,12 @@
 package com.company;
-import java.util.*;
-import java.io.*;
 
 
- interface Questions {
+import java.util.List;
+
+interface Questions {
 
 
     public void mathQuestions();
+    public List<String> sciQuestions();
 
 }

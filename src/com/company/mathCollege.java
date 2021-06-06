@@ -11,17 +11,13 @@ public abstract class mathCollege implements Questions{
     public List<String> mathsQuestions(){
         questions.add("Solve for q.\n" +
                 "–8q = 3 − 11q\n" + "q = " );
-        questions.add("Solve for d.\n" +
-
-                "19d ≥ 20d + 3(14d + 1)\n" +
-                "Write your answer with d first, followed by an inequality symbol.\n");
-        questions.add("Solve for h.\n" +
-                "–2|h| = –8\n" +
-                "Write your answers as integers or as proper or improper fractions in simplest form.\n" +
-                "h = \n" +
-                "or h = \n");
-        questions.add("Nolan's retirement party costs " + "£35 " + ",plus an additional" + "£1" + " for each guest he invites." +
-                "What is the maximum number of guests there can be if Nolan can afford to spend a total of " + "£45" + " on his retirement party?\n");
+        questions.add("Solve for j.\n" +
+                "20 + 5j = 2j − 16\n" +
+                "j =");
+        questions.add("Solve for s.\n" +
+                "16 − 19s = –20s\n" +
+                "s =");
+        questions.add("Nolan's retirement party costs £35 ,plus an additional £1 for each guest he invites. What is the maximum number of guests there can be if Nolan can afford to spend a total of £45 on his retirement party?");
         questions.add("–3w + 1 = –4w + 14\n" + "w = \n");
         return questions;
     }
@@ -47,4 +43,5 @@ public abstract class mathCollege implements Questions{
                 "questions=" + mathsQuestions() +
                 '}';
     }
+
 }
