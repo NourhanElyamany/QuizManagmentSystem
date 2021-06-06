@@ -6,37 +6,23 @@ public class Questions {
 
     public void mathQuestions() {
         questions.add("Solve for q.\n" +
-                "\n" +
-                "–8q = 3 − 11q\n" +
-                "\n" +
-                "q = " );
+                "–8q = 3 − 11q\n" + "q = " );
         questions.add("Solve for d.\n" +
-                "–\n" +
-                "19d≥20d+3(\n" +
-                "–\n" +
-                "14d+1)\n" +
-                "Write your answer with d first, followed by an inequality symbol.\n" +
-                "\n");
+
+                "19d ≥ 20d + 3(14d + 1)\n" +
+                "Write your answer with d first, followed by an inequality symbol.\n");
         questions.add("Solve for h.\n" +
-                "\n" +
                 "–2|h| = –8\n" +
-                "\n" +
-                "\n" +
                 "Write your answers as integers or as proper or improper fractions in simplest form.\n" +
-                "\n" +
                 "h = \n" +
-                " or h = \n ");
-        questions.add("Nolan's retirement party costs\n" +
-                "£\t35\n" +
-                ",plus an additional\n" +
-                "£\t1\n" +
-                "for each guest he invites. What is the maximum number of guests there can be if Nolan can afford to spend a total of\n" +
-                "£\t45\n" +
-                "on his retirement party?");
-        questions.add("–3w + 1 = –4w + 14\n" +
-                "\n" +
-                "w = \n");
+                "or h = ");
+        questions.add("Nolan's retirement party costs " + "£35 " + ",plus an additional" + "£1" + " for each guest he invites." +
+                "What is the maximum number of guests there can be if Nolan can afford to spend a total of " + "£45" + " on his retirement party?");
+        questions.add("–3w + 1 = –4w + 14\n" + "w = ");
         return;
+    }
+
+    public Questions() {
     }
 
     public Questions(List<String> questions) {
@@ -54,7 +40,7 @@ public class Questions {
     @Override
     public String toString() {
         return "Questions{" +
-                "questions=" + questions.get(0) + questions.get(1) + questions.get(2) + questions.get(3) + questions.get(4) +
+                "questions=" + questions.get(1) + questions.get(2) + questions.get(3) + questions.get(4) + questions.get(0) +
                 '}';
     }
 }
