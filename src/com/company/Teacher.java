@@ -1,11 +1,12 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Teacher extends Person {
 
-    public List<String> generate(List<String> questions)
+    public ArrayList<String> generate(ArrayList<String> questions)
     {
         Collections.shuffle(questions);
         return questions;
@@ -17,6 +18,7 @@ public class Teacher extends Person {
     public Teacher(int id, String username) {
         super(id, username);
     }
+
 
 
     @Override
