@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 public class CourseSelector extends JFrame implements ActionListener {
 
     JButton startQuiz;
+    static String courseChosen;
+    JComboBox selectBox;
     CourseSelector(){
 
         JPanel panel = new JPanel();
@@ -20,7 +22,7 @@ public class CourseSelector extends JFrame implements ActionListener {
 
         // combo box
         String[] courses = {"","Maths" , "Science" , "Literature"};
-        JComboBox selectBox = new JComboBox(courses);
+        selectBox = new JComboBox(courses);
         selectBox.setBounds(200,240,200,90);
 
         // title for combo box
@@ -51,6 +53,13 @@ public class CourseSelector extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == startQuiz){
+            courseChosen = selectBox.getSelectedItem().toString();
+            this.setVisible(false);
+            Quiz frame3 = new Quiz();
+            frame3.setVisible(true);
+        }
+
 
 
     }

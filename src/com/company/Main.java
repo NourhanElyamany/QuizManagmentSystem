@@ -25,7 +25,7 @@ public class Main {
         int input= in.nextInt();
         if (input == 1){
             points = 0;
-            q = teach.generate(math.creatQ());
+            q = teach.generate(math.createQ());
             for (int i = 0 ; i<3 ; i++){
                 System.out.println(q.get(i));
                 String ans = in.next();
@@ -38,7 +38,7 @@ public class Main {
         }
         if (input == 2){
             points = 0;
-            q = teach.generate(science.creatQ());
+            q = teach.generate(science.createQ());
             for (int i = 0 ; i <3 ; i++){
                 System.out.println(q.get(i));
                 String ans = in.next();

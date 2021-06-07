@@ -16,7 +16,7 @@ public class MyFrame extends JFrame implements ActionListener {
         JPanel panel = new JPanel();
         this.setTitle("Main Window"); // sets title for the this
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); // exit out application
-        this.setSize(600,600); // set the this size
+        this.setSize(700,700); // set the this size
         this.setResizable(false);
 //        this.setLayout(new FlowLayout());
         ImageIcon image = new ImageIcon("/Users/nourhanelyamany/Desktop/Java-Projects/Quiz Managment System/src/com/company/quiz.png");
