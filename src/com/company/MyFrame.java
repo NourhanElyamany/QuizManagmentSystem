@@ -1,19 +1,52 @@
 package com.company;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class MyFrame extends JFrame {
    
     MyFrame(){
-
         // JFrame = a gui window to add components to
-
+        JPanel panel = new JPanel();
         this.setTitle("Main Window"); // sets title for the this
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit out application
+        this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); // exit out application
         this.setSize(600,600); // set the this size
         this.setResizable(false);
+        ImageIcon image = new ImageIcon("/Users/nourhanelyamany/Desktop/Java-Projects/Quiz Managment System/src/com/company/quiz.png");
+        Border border = BorderFactory.createLineBorder(Color.decode("#ffd482"),3);
+
+
+        // welcome label
+        JLabel label = new JLabel(); // create a label
+        label.setText("   \nWELCOME..");
+        label.setHorizontalTextPosition(JLabel.CENTER);
+        label.setVerticalTextPosition(JLabel.TOP);
+        label.setForeground(Color.decode("#FFD482"));
+        label.setFont(new Font("Optima", Font.CENTER_BASELINE,22));
+        label.setIconTextGap(-140);
+        label.setIcon(image);
+        label.setBounds(100,100,350,350);
+
+        // manager application label
+        JLabel label2 = new JLabel();
+        label2.setText("MANAGER APPLICATION");
+        label2.setHorizontalTextPosition(JLabel.CENTER);
+        label2.setForeground(Color.decode("#FFD482"));
+        label2.setFont(new Font("Optima", Font.CENTER_BASELINE,19));
+        label2.setBounds(200,220,250,250);
+
+
+
+
+        panel.setBorder(border);
+        panel.setBackground(Color.decode("#4E586E"));
+        panel.add(label);
+        panel.add(label2);
+        panel.setLayout(null);
+
+        this.add(panel);
         this.setVisible(true);
-        this.getContentPane().setBackground(Color.decode("#4E586E"));
+
     }
 }
