@@ -13,6 +13,7 @@ public class MainWindow{
         MyFrame frame = new MyFrame();
 
 
+
 //        String fonts[] = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 //
 //        for ( int i = 0; i < fonts.length; i++ )
