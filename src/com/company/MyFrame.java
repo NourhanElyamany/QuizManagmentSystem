@@ -45,27 +45,34 @@ public class MyFrame extends JFrame implements ActionListener {
         username.setFont(new Font("Optima",Font.BOLD,16));
         username.setBounds(138,380,200,30);
         username.setForeground(Color.decode("#B8D8D8"));
-        text.setBounds(210, 380, 200, 30);
+        text.setBounds(230, 380, 200, 30);
         text.setAlignmentX(JTextField.CENTER);
         text.setAlignmentY(JTextField.CENTER);
         text.setBackground(Color.decode("#EEF5DB"));
-        text.setText("EnterYourUsername..");
-//        text.setEditable(false);
+//        text.setText("EnterYourUsername..");
+        //        text.setEditable(false);
         JTextField id = new JTextField();
         JLabel ID = new JLabel("ID: ");
         ID.setFont(new Font("Optima",Font.BOLD,16));
         ID.setBounds(138,430,200,30);
         ID.setForeground(Color.decode("#B8D8D8"));
-        id.setBounds(210, 430, 200, 30);
+        id.setBounds(230, 430, 200, 30);
         id.setAlignmentX(JTextField.CENTER);
         id.setAlignmentY(JTextField.CENTER);
         id.setBackground(Color.decode("#EEF5DB"));
-        id.setText("EnterYourID..");
+//        id.setText("EnterYourID..");
 
+        // button creation
+        JButton start = new JButton();
+        start.setText("Start");
+        start.setBounds(430, 430,70, 30);
+        start.setForeground(Color.decode("#7a9e9f"));
+//        start.addActionListener(this);
 
 
         panel.setBorder(border);
-        panel.setBackground(Color.decode("#7A9E9F"));
+        panel.setBackground(Color.decode("#4f6367"));
+        panel.add(start);
         panel.add(text);
         panel.add(label);
         panel.add(label2);

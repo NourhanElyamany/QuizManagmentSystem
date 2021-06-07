@@ -14,8 +14,12 @@ public class Main {
         gradingSystem grade = new gradingSystem();
         Teacher teach = new Teacher();
         Answers answer = new Answers();
+        Person p = new Person();
         int points;
         Scanner in = new Scanner(System.in);
+
+        p.username = in.next();
+        p.Id = in.nextInt();
 
         System.out.println(" which subject you want to get exam for? \n 1-Maths \n 2-Science");
         int input= in.nextInt();
@@ -47,6 +51,7 @@ public class Main {
             System.out.println(percent);
             System.out.println(" you got " + grade.grade(percent) + " in this quiz.");
         }
+
     }
 }
 
