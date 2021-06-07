@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sciCollege implements Quistions {
+public class sciCollege implements Questions {
     ArrayList<String> questions = new ArrayList<String>();
 
 
@@ -20,7 +20,7 @@ public class sciCollege implements Quistions {
     }
 
 
-    public ArrayList<String> creatQ() {
+    public ArrayList<String> createQ() {
         questions.add("What does DNA stand for?");
         questions.add("How many bones are in the human body?");
         questions.add("The concept of gravity was discovered by which famous physicist?\n");

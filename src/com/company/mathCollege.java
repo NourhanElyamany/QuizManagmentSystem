@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class mathCollege implements Quistions  {
+public class mathCollege implements Questions  {
 
     ArrayList<String> questions = new ArrayList<String>();
 
@@ -22,7 +22,7 @@ public class mathCollege implements Quistions  {
     }
 
 
-    public ArrayList<String> creatQ() {
+    public ArrayList<String> createQ() {
         questions.add("Solve for q.\n –8q = 3 − 11q\n q = ");
         questions.add("Solve for j.\n 20 + 5j = 2j − 16\n j =");
         questions.add("Solve for s.\n 16 − 19s = –20s\n s =");
