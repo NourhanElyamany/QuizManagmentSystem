@@ -3,8 +3,10 @@ package com.company;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame implements ActionListener {
    
     MyFrame(){
         // JFrame = a gui window to add components to
@@ -13,6 +15,7 @@ public class MyFrame extends JFrame {
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE); // exit out application
         this.setSize(600,600); // set the this size
         this.setResizable(false);
+//        this.setLayout(new FlowLayout());
         ImageIcon image = new ImageIcon("/Users/nourhanelyamany/Desktop/Java-Projects/Quiz Managment System/src/com/company/quiz.png");
         Border border = BorderFactory.createLineBorder(Color.decode("#ffd482"),3);
 
@@ -22,7 +25,7 @@ public class MyFrame extends JFrame {
         label.setText("   \nWELCOME..");
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);
-        label.setForeground(Color.decode("#FFD482"));
+        label.setForeground(Color.decode("#EEF5DB"));
         label.setFont(new Font("Optima", Font.CENTER_BASELINE,22));
         label.setIconTextGap(-140);
         label.setIcon(image);
@@ -30,23 +33,54 @@ public class MyFrame extends JFrame {
 
         // manager application label
         JLabel label2 = new JLabel();
-        label2.setText("MANAGER APPLICATION");
+        label2.setText("APPLICATION MANAGER");
         label2.setHorizontalTextPosition(JLabel.CENTER);
-        label2.setForeground(Color.decode("#FFD482"));
+        label2.setForeground(Color.decode("#EEF5DB"));
         label2.setFont(new Font("Optima", Font.CENTER_BASELINE,19));
         label2.setBounds(200,220,250,250);
 
+        // text entry
+        JTextField text = new JTextField();
+        JLabel username = new JLabel("Username: ");
+        username.setFont(new Font("Optima",Font.BOLD,16));
+        username.setBounds(138,380,200,30);
+        username.setForeground(Color.decode("#B8D8D8"));
+        text.setBounds(210, 380, 200, 30);
+        text.setAlignmentX(JTextField.CENTER);
+        text.setAlignmentY(JTextField.CENTER);
+        text.setBackground(Color.decode("#EEF5DB"));
+        text.setText("EnterYourUsername..");
+//        text.setEditable(false);
+        JTextField id = new JTextField();
+        JLabel ID = new JLabel("ID: ");
+        ID.setFont(new Font("Optima",Font.BOLD,16));
+        ID.setBounds(138,430,200,30);
+        ID.setForeground(Color.decode("#B8D8D8"));
+        id.setBounds(210, 430, 200, 30);
+        id.setAlignmentX(JTextField.CENTER);
+        id.setAlignmentY(JTextField.CENTER);
+        id.setBackground(Color.decode("#EEF5DB"));
+        id.setText("EnterYourID..");
 
 
 
         panel.setBorder(border);
-        panel.setBackground(Color.decode("#4E586E"));
+        panel.setBackground(Color.decode("#7A9E9F"));
+        panel.add(text);
         panel.add(label);
         panel.add(label2);
+        panel.add(username);
+        panel.add(id);
+        panel.add(ID);
         panel.setLayout(null);
 
         this.add(panel);
         this.setVisible(true);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
     }
 }
