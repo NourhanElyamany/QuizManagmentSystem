@@ -18,14 +18,14 @@ public class Main {
         int points;
         Scanner in = new Scanner(System.in);
 
-        p.username = in.next();
-        p.Id = in.nextInt();
+        //p.username = in.next();
+        //p.Id = in.nextInt();
 
         System.out.println(" which subject you want to get exam for? \n 1-Maths \n 2-Science");
         int input= in.nextInt();
         if (input == 1){
             points = 0;
-            q = teach.generate(math.mathsQuestions());
+            q = teach.generate(math.creatQ());
             for (int i = 0 ; i<3 ; i++){
                 System.out.println(q.get(i));
                 String ans = in.next();
@@ -38,7 +38,7 @@ public class Main {
         }
         if (input == 2){
             points = 0;
-            q = teach.generate(science.sciQuestions());
+            q = teach.generate(science.creatQ());
             for (int i = 0 ; i <3 ; i++){
                 System.out.println(q.get(i));
                 String ans = in.next();

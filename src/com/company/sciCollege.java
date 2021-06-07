@@ -3,12 +3,9 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sciCollege extends College {
+public class sciCollege implements Quistions {
     ArrayList<String> questions = new ArrayList<String>();
 
-    public sciCollege(String collegeName, int semester) {
-        super(collegeName, semester);
-    }
 
     public sciCollege() {
         this.questions = questions;
@@ -22,7 +19,8 @@ public class sciCollege extends College {
         this.questions = questions;
     }
 
-    public ArrayList<String> sciQuestions(){
+
+    public ArrayList<String> creatQ() {
         questions.add("What does DNA stand for?");
         questions.add("How many bones are in the human body?");
         questions.add("The concept of gravity was discovered by which famous physicist?\n");
@@ -30,13 +28,6 @@ public class sciCollege extends College {
         questions.add("Which is the main gas that makes up the Earth’s atmosphere?\n");
         return questions;
     }
-
-    @Override
-    public String toString() {
-        return "sciCollege{" +
-                "collegeName='" + collegeName + '\'' +
-                ", semester=" + semester +
-                ", questions=" + questions +
-                '}';
-    }
 }
+
+
