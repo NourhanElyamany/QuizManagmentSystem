@@ -7,7 +7,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MyFrame extends JFrame implements ActionListener {
-   
+    JButton start;
+    JTextField id;
+    JTextField text;
+    Person p = new Person();
     MyFrame(){
         // JFrame = a gui window to add components to
         JPanel panel = new JPanel();
@@ -40,7 +43,7 @@ public class MyFrame extends JFrame implements ActionListener {
         label2.setBounds(200,220,250,250);
 
         // text entry
-        JTextField text = new JTextField();
+        text = new JTextField();
         JLabel username = new JLabel("Username: ");
         username.setFont(new Font("Optima",Font.BOLD,16));
         username.setBounds(138,380,200,30);
@@ -51,7 +54,7 @@ public class MyFrame extends JFrame implements ActionListener {
         text.setBackground(Color.decode("#EEF5DB"));
 //        text.setText("EnterYourUsername..");
         //        text.setEditable(false);
-        JTextField id = new JTextField();
+        id = new JTextField();
         JLabel ID = new JLabel("ID: ");
         ID.setFont(new Font("Optima",Font.BOLD,16));
         ID.setBounds(138,430,200,30);
@@ -63,11 +66,11 @@ public class MyFrame extends JFrame implements ActionListener {
 //        id.setText("EnterYourID..");
 
         // button creation
-        JButton start = new JButton();
+        start = new JButton();
         start.setText("Start");
         start.setBounds(430, 430,70, 30);
         start.setForeground(Color.decode("#7a9e9f"));
-//        start.addActionListener(this);
+        start.addActionListener(this);
 
 
         panel.setBorder(border);
@@ -88,6 +91,16 @@ public class MyFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == start){
+            p.username = text.getText();
+            p.Id = Integer.parseInt(id.getText());
+            System.out.println(p.username + p.Id);
+            this.setVisible(false);
+            CourseSelector frame2 = new CourseSelector();
+            frame2.setVisible(true);
+        }
 
     }
+
+
 }
