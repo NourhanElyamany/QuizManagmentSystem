@@ -19,7 +19,7 @@ public class MyFrame extends JFrame implements ActionListener {
         this.setSize(700,700); // set the this size
         this.setResizable(false);
 //        this.setLayout(new FlowLayout());
-        ImageIcon image = new ImageIcon("/Users/nourhanelyamany/Desktop/Java-Projects/Quiz Managment System/src/com/company/quiz.png");
+        ImageIcon image = new ImageIcon("quiz.png");
         Border border = BorderFactory.createLineBorder(Color.decode("#ffd482"),3);
 
 
