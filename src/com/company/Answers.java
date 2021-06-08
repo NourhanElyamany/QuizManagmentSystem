@@ -35,6 +35,11 @@ public class Answers {
         answers.add("Newton");
         answers.add("Diamond");
         answers.add("Nitrogen");
+        answers.add("deoxyribonucleic acid");
+        answers.add("206");
+        answers.add("newton");
+        answers.add("diamond");
+        answers.add("nitrogen");
         return answers;
     }
 

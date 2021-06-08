@@ -3,9 +3,17 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-public class sciCollege implements Questions {
+public class sciCollege extends college implements Questions {
     ArrayList<String> questions = new ArrayList<String>();
 
+    public sciCollege(ArrayList<String> questions) {
+        this.questions = questions;
+    }
+
+    public sciCollege(String name, int semester, ArrayList<String> questions) {
+        super(name, semester);
+        this.questions = questions;
+    }
 
     public sciCollege() {
         this.questions = questions;
@@ -27,6 +35,12 @@ public class sciCollege implements Questions {
         questions.add("What is the hardest natural substance on Earth?\n");
         questions.add("Which is the main gas that makes up the Earth’s atmosphere?\n");
         return questions;
+    }
+
+
+    @Override
+    public String message() {
+       return super.message() + "a scientist" ;
     }
 }
 

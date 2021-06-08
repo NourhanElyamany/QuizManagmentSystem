@@ -8,6 +8,8 @@ public class Certificate extends JFrame {
     Person person = new Person();
     Quiz quiz = new Quiz();
     CourseSelector course = new CourseSelector();
+    sciCollege sci = new sciCollege();
+    mathCollege math = new mathCollege();
     Certificate(){
         JPanel panel = new JPanel();
         this.setTitle("Quiz"); // sets title for the this
@@ -25,6 +27,7 @@ public class Certificate extends JFrame {
         JLabel id = new JLabel(person.getId());
         JLabel college = new JLabel(course.courseChosen);
         JLabel grade = new JLabel(quiz.letter);
+        JLabel message = new JLabel();
         JLabel percentage = new JLabel(String.valueOf(quiz.percent + "%"));
         name.setBounds(170,100,200,100);
         name.setFont(new Font("Optima",Font.BOLD,20));
@@ -46,11 +49,24 @@ public class Certificate extends JFrame {
         percentage.setFont(new Font("Optima",Font.BOLD,20));
         percentage.setForeground(Color.decode("#B8D8D8"));
 
+        message.setBounds(170,400,500,100);
+        message.setFont(new Font("Optima",Font.BOLD,30));
+        message.setForeground(Color.decode("#B8D8D8"));
+        if(course.courseChosen=="Maths"){
+            message.setText(math.message());
+        }
+        else if(course.courseChosen=="Science"){
+            message.setText(sci.message());
+
+        }
+
+
         JLabel nameLabel = new JLabel("Name: ");
         JLabel idLabel = new JLabel("ID: ");
         JLabel collegeLabel = new JLabel("College: ");
         JLabel gradeLabel = new JLabel("Grade: ");
         JLabel percentageLabel = new JLabel("Percentage: ");
+
 
         nameLabel.setBounds(60,100,200,100);
         nameLabel.setFont(new Font("Optima",Font.ITALIC,20));
@@ -89,6 +105,7 @@ public class Certificate extends JFrame {
         panel.add(collegeLabel);
         panel.add(gradeLabel);
         panel.add(percentageLabel);
+        panel.add(message);
 
 
 

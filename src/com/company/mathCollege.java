@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class mathCollege implements Questions  {
+public class mathCollege extends college implements Questions  {
 
     ArrayList<String> questions = new ArrayList<String>();
 
-
     public mathCollege() {
+        this.questions = questions;
+    }
+
+    public mathCollege(ArrayList<String> questions) {
         this.questions = questions;
     }
 
@@ -29,5 +32,11 @@ public class mathCollege implements Questions  {
         questions.add("Nolan's retirement party costs £35 ,plus an additional £1 for each guest he invites. What is the maximum number of guests there can be if Nolan can afford to spend a total of £45 on his retirement party?");
         questions.add("–3w + 1 = –4w + 14\n w = \n");
         return questions;
+    }
+
+
+    @Override
+    public String message() {
+        return super.message() + "a mathematician";
     }
 }
