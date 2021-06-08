@@ -58,6 +58,7 @@ public class CourseSelector extends JFrame implements ActionListener {
             this.setVisible(false);
             Quiz frame3 = new Quiz();
             frame3.setVisible(true);
+
         }
 
 

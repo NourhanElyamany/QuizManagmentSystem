@@ -92,8 +92,8 @@ public class MyFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == start){
-            p.username = text.getText();
-            p.Id = Integer.parseInt(id.getText());
+            p.setUsername(text.getText());
+            p.setId(id.getText());
             System.out.println(p.username + p.Id);
             this.setVisible(false);
             CourseSelector frame2 = new CourseSelector();

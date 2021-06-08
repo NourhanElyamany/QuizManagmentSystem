@@ -1,19 +1,19 @@
 package com.company;
 
 public class Person {
-    int Id;
-    String username;
+    static String Id;
+    static String username;
 
-    public Person(int id, String username) {
+    public Person(String id, String username) {
         this.Id = id;
         this.username = username;
     }
 
-    public int getId() {
+    public String getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         Id = id;
     }
 

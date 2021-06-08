@@ -25,6 +25,9 @@ public class Quiz extends JFrame implements ActionListener {
     JLabel Q2;
     JLabel Q3;
 
+    static String letter;
+    static float percent;
+
 
     Quiz() {
         JPanel panel = new JPanel();
@@ -135,9 +138,17 @@ public class Quiz extends JFrame implements ActionListener {
                     points++;
             }
 
-            float percent = grade.calculate(points);
-            System.out.println(" you got " + grade.grade(percent) + " in this quiz.");
+            grade.setPercentage(grade.calculate(points));
+            letter = grade.getLetter();
+            percent = grade.getPercentage();
+            Certificate frame4 = new Certificate();
+
+
+            this.setVisible(false);
+            frame4.setVisible(true);
         }
+
+
 
     }
 }
