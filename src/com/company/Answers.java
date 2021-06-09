@@ -24,7 +24,7 @@ public class Answers {
         answers.add("1");
         answers.add("-12");
         answers.add("-16");
-        answers.add("10");
+        answers.add("-5");
         answers.add("14");
         return answers;
     }
